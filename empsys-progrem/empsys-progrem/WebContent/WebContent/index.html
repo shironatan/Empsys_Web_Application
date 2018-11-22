@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <title>従業員情報管理システム ログイン</title>
+</head>
+	<body>
+		<div id="container">
+				<div id="header">
+				<h1>従業員情報管理システム</h1>
+				<p>&nbsp;</p>
+				</div>
+				<div id ="hello">
+					ようこそ
+				</div>
+
+				<div id ="select">
+				</div>
+			<div id ="content">
+					<h2>ログイン</h2>
+					<p>ユーザIDとパスワードを入力してください。</p>
+	        <form action="./FrontControllerServlet" method="POST">
+	            <table summary="" id="table-form">
+	                <tr>
+	                    <td align="center">ユーザID</td>
+	                    <td align="left">
+	                         <input type="text" name="user_id" maxlength="7" size="7" style="ime-mode:disabled;"></td>
+	                </tr>
+	                <tr>
+	                    <td align="center">パスワード</td>
+	                    <td align="left">
+	                        <input type="password" name="password" maxlength="8" size="8" style="ime-mode:disabled;"></td>
+	                </tr>
+
+				<tr align="center" height="60px"><td colspan="2"><input type="submit" id="button" value="ログイン"></td></tr>
+	            <tr align="center" valign="top"><td colspan="2"><input type="reset" id="button" value="リセット"></td></tr>
+				</table>
+
+	            <input type="hidden" name="screen_transition" value="login_form" />
+				 </form>
+			</div>
+				<div id="footer">
+					Webアプリケーション応用講座
+				</div>
+		</div>
+	</body>
+</html>
