@@ -13,6 +13,7 @@ public class AutoCast {
 	public static <T> T automaticCast(Object src) {
 	    T castedObject = (T) src;
 	    return castedObject;
+
 	}
 
 }
