@@ -41,7 +41,7 @@ public class ConnectionManager {
 		//オブジェクト取得
 		try {
 			//接続先を指定
-			con = DriverManager.getConnection("jdbc:mysql://localhost:ポート番号/emp_sys_db?characterEncoding=UTF-8&serverTimezone=JST","ユーザID","パスワード");
+			con = DriverManager.getConnection( "jdbc:mysql://localhost:ポート番号/emp_sys_db?characterEncoding=UTF-8&serverTimezone=JST","ユーザID","パスワード");
 		}
 		catch (SQLException e)
 		{
